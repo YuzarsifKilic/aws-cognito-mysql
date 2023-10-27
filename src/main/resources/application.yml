@@ -1,0 +1,27 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: XXXXXXXXXX
+  datasource:
+    url: jdbc:mysql://localhost:3306/cognito
+    username: root
+    password: yuzarsif
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+aws:
+  access-key: XXXXXXXXXX
+  access-secret: XXXXXXXXXX
+  default-region: XXXXXXXXXX
+  cognito:
+    client-id: XXXXXXXXXX
+    client-secret: XXXXXXXXXX
+    user-pool-id: XXXXXXXXXX
+
+
